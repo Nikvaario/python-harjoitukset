@@ -1,1 +1,1 @@
-print("Hei, Niko Rahikainen!")
+print('Hei Maailma!')
