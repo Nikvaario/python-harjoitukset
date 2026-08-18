@@ -2,6 +2,10 @@
 
 **Niko Rahikainen**
 
-## Moduuli 1
+## Moduuli 1 ja 2
 
-Tein tehtävät: 
+Tein molemmat tehtävät, eli Hello World tyylisen ohjelman sekä gitin käyttöönoton
+
+## Moduuli 3
+
+Tein tehtävät 1, 2, 3, 4, 5 ja 6
