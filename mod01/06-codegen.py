@@ -1,6 +1,7 @@
 import random
 
 # Luo käyttäjälle kaksi numerokoodia: kolmelukuisen koodin 0-9 lukujen väliltä ja neljälukuisen koodin 1-6 lukujen väliltä
+
 kolminumeroinenKoodi = []
 nelinumeroinenKoodi = []
 
