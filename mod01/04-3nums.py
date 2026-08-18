@@ -1,3 +1,4 @@
+# Ottaa ohjelmalle kirjoitetut kolme lukua, ja palauttaa niiden summan, tulon ja keskiarvon
 luku1 = int(input("Anna ensimmäinen numero (1/3): "))
 luku2 = int(input("Anna toinen numero (2/3): "))
 luku3 = int(input("Anna kolmas numero (3/3): "))
