@@ -1,0 +1,12 @@
+1. Mitä pythonin muuttujat eroavat muista ohjelmointikielistä, kuten C?
+    Pythonilla ei tarvitse ilmaista muuttujan tyyppiä ohjelmalle, vaan se hoitaa tämän prosessin käyttäjän puolesta.
+    Esimerkiksi C kielillä muuttujan tyyppi täytyisi ilmaista alkuun ( esim: int litra = 0 ), kun taas python tekee
+    muuttujan tyypin valinnan käyttäjän puolesta ( esim: litra = 0, Python tekee "litra" muuttujasta int -tyyppisen muuttujan)
+
+2. Miten pythonin muuttujat toimii pinnanalla?
+    Kun ohjelmoija luo muuttujan ja käy scriptin läpi, niin python luo muistiin säiliön muuttujalle, sen tunnisteelle ja
+    syötetylle arvolle. Python pääsee käsiksi säiliöön tunnisteen avulla, joka on muuttujalle annettu nimi. 
+
+3. Miten python hoitaa pienilukuiset "Int" muuttujat?
+    Jos käyttäjä luo Int tyyppisen muuttujan lukujen -5 ja 256 väliltä, niin python käyttää valmista kirjastoa muuttujan sijasta,
+    kun kyseistä muuttujaa käytetään koodissa.
