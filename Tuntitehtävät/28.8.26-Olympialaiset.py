@@ -1,3 +1,7 @@
+# Ottaa ohjelmalle syötetyn vuosiluvun, ja tarkistaa onko kyseessä olympiavuosi eli onko vuosiluku jaollinen neljällä.
+# Jos vuosiluku on jaollinen neljällä, niin palautetaan järjestäminen TRUE.
+# Jos vuosiluku ei ole jaollinen neljällä, niin palautetaan järjestäminen FALSE.
+# Jos vuosiluku on jaollinen neljällä mutta vuosiluvulla ei järjestetty poikkeuksesta, niin palautetaan järjestäminen FALSE + syy.
 syötettyVuosi = int(input("Anna vuosi: "))
 
 while syötettyVuosi < 1896:
