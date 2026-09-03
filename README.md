@@ -14,6 +14,12 @@ Tein kaikki moduulin kuusi tehtävää 18.8
 
 Tein kaikki moduulin neljä tehtävää 21.8
 
+## Moduuli 5
+
+
+
+## Moduuli 6
+
 ## Peliprojekti
 
 Tein ensimmäisen osan (Moduuli3) projektia 21.8
