@@ -26,10 +26,16 @@ Tein moduulin kaikki neljä tehtävää 3.9.
 
 Tein moduulin kaikki kuusi tehtävää 8.9.
 
+## Moduuli 8
+
+Tein moduulin kaikki kolme tehtävää 8.9.
+
 ## Peliprojekti
 
-Tein ensimmäisen osan (Moduuli3) projektia 21.8
+Jokaisen osan dokumentaatio löytyy "peliprojekti" kansion README.md tiedostosta.
 
-Tein toisen osan (Moduuli6) projektia 3.9
+Tein ensimmäisen osan (Moduuli3) projektia 21.8.
 
-Tein kolmannen osan (Moduuli7) projektia 8.9
+Tein toisen osan (Moduuli6) projektia 3.9.
+
+Tein kolmannen osan (Moduuli7) projektia 8.9.
