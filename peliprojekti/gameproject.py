@@ -1,6 +1,6 @@
 import sys
 
-# Asks player's name and age
+# Asks player's name and age + statistics variables
 playerName = input("Please insert your name: ")
 playerAge = input("Please insert your age: ")
 cash = 250
