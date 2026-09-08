@@ -14,3 +14,8 @@ Tein myös erilaisia komentoja käyttäjälle, jonka avulla hän saa lisätietoa
 -| Surrounding: Kertoo pelaajan nykyisen ympäristön.
 
 Komentoja varten lisäsin stats valikkoon yksinkertaisen cash osion sekä kuvauksen pelaajan inventoryn käytön määrästä.
+
+## Projekti 3
+Tein peliprojektin kolmannen osion 8.9. jolloin vaihdoin suurimmanosan koodin osista omiin funktiohin, kuten komentojen kysymisen tai pelaajan tilastojen printtaamisen. Tämän lisäksi loin listan "inventory" jolle on kaksi komentoa: Inventoryn tarkistus sekä tavaran lisääminen sinne. Inventoryn jatkoa ajatellen loin myös muuttujan, jota käytetään maksimikoon merkkaamiseen.
+
+Ohjelmasta poistumista varten loin myös varmistusta varten funktion, joka kysyy "Cancel" komennon antaessa varmistuksen haluaako pelaaja poistua pelistä vai ei.
