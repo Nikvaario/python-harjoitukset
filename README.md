@@ -22,6 +22,14 @@ Tein moduuli tehtävät 1-5 3.9. En tehnyt viimeistä tehtävää, koska sen teh
 
 Tein moduulin kaikki neljä tehtävää 3.9.
 
+## Moduuli 7
+
+Tein moduulin kaikki kuusi tehtävää 8.9.
+
 ## Peliprojekti
 
 Tein ensimmäisen osan (Moduuli3) projektia 21.8
+
+Tein toisen osan (Moduuli6) projektia 3.9
+
+Tein kolmannen osan (Moduuli7) projektia 8.9
