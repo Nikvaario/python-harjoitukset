@@ -1,3 +1,5 @@
+# Ottaa ohjelmalle syötetyt esineet ja lisää ne olioon, josta ohjelman lopettaessa tulostetaan jokainen esine sekä valmiiksi annetut loitsut
+# Kun käyttäjä syöttää ohjelmalle esineen, niin sille arvotaan myös satunnainen laatu
 import random
 
 class Inventaario:
