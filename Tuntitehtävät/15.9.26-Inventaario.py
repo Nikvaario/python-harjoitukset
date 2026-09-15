@@ -8,15 +8,18 @@ class Inventaario:
         self.loitsut = ["Meteoriittisade", "Tulipallo"]
         self.loitsut.extend(loitsut)
 
+    # Lisää reppuun esineen ja sen laadun
     def lisääTavara(self, nimi, laatu):
         self.reppu[nimi] = laatu
 
+    # Tulostaa käyttäjälle kaikki repun esineet
     def tulostaReppu(self):
         print("Reppusi sisältää seuraavat esineet:")
 
         for esine in self.reppu:
             print("- "+self.reppu[esine], esine)
 
+# Arvoo syötetylle esineelle laadun
 def arvoLaatu():
     arvot = "Huono", "Tavallinen", "Hyvä", "Erinomainen"
     laatu = arvot[random.randint(0, 3)]
