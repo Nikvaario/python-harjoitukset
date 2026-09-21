@@ -30,6 +30,14 @@ Tein moduulin kaikki kuusi tehtävää 8.9.
 
 Tein moduulin kaikki kolme tehtävää 8.9.
 
+## Moduuli 9
+
+Tein moduulin kaikki neljä tehtävää 18.9.
+
+## Moduuli 10
+
+Tein moduulin tehtävät 1-3 21.9.
+
 ## Peliprojekti
 
 Jokaisen osan dokumentaatio löytyy "peliprojekti" kansion README.md tiedostosta.
