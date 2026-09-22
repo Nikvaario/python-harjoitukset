@@ -36,7 +36,7 @@ Tein moduulin kaikki neljä tehtävää 18.9.
 
 ## Moduuli 10
 
-Tein moduulin tehtävät 1-3 21.9.
+Tein moduulin kaikki neljä tehtävää 22.9.
 
 ## Moduuli 11
 
