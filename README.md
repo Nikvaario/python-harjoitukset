@@ -51,3 +51,5 @@ Tein ensimmäisen osan (Moduuli3) projektia 21.8.
 Tein toisen osan (Moduuli6) projektia 3.9.
 
 Tein kolmannen osan (Moduuli7) projektia 8.9.
+
+Tein neljännen osan (Moduuli12) projektia 2.10.

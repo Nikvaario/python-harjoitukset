@@ -1,0 +1,2 @@
+Lehti Aku Ankka julkaistu, jonka päätoimittaja on Aki Hyyppä. | onko kirja lainassa: False
+Kirja Hytti n:o 6 julkaistu, jonka kirjailija on Rosa Liksom. Kirjassa on 200 sivua. | onko kirja lainassa: False
