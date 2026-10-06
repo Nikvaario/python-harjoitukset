@@ -41,3 +41,11 @@ Tein peliprojektin neljännen osion 29.9-2.10 välisenä aikana. 29.9 viimesteli
 Lisäsin pelille uuden komennenon "Move", jonka avulla pelaaja voi liikkua eteenpäin alueita, kunnes hän saapuu nykyiseen viimeiseen alueeseen. Muokkasin myös "Surrounding" komentoa, jonka kautta pelaaja löytää eri alueilta eri esineitä, joita hän voi kerätä reppuunsa.
 
 Poistin edellisistä projektitehtävistä tulleita komentoja tai funktiota, kuten "Add item" ja "Check cash", koska en kokenut niitä enään tarpeelliseksi peliäni varten.
+
+## Projekti 5
+
+Tein projektin viidennettä osiota 5-6.10 välisenä aikana. 5.10 Loin pelille aloitusmenun, ja sitä vaativat funktiot eri komennoille. Komentoina toimii "N": aloita peli uudella hahmolla, "L": lataa olemassa oleva palaaja, "Q": Lue pelin ohjeteksti sekä "E": poistu pelistä. 
+
+6.10 loin moduulin ./savesystem.py, joka tekee kaiken pelaajan dataan liittyvän tallentamisen sekä lataamisen, kun näitä pyydetään. Pelin edellinen "cancel" komento on muuttunut "exit" komennoksi, ja sensijaan että se kysyy ohjelmasta poistumisen varmistuksen, niin komento kysyy nyt pelaajan datan tallennuksen halua.  
+
+projekti ylitti myös rivimäärän alirajan, eli 200 riviä koodia. 

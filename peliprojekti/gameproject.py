@@ -1,4 +1,5 @@
 import sys
+from modules import savesystem
 
 class Player():
     def __init__(self, name, age, inventory, cash, location):
@@ -28,21 +29,41 @@ class Area():
         else:
             self.trashPickedUp = True
             return self.trash
-        
 
-# Asks player's name and age + statistics variables
-playerName = input("Please insert your name: ")
-playerAge = input("Please insert your age: ")
-cash = 250
-inventory = []
+# Menu
+print("|| Trash Collector's Day ||")
 
-# Checks if player is old enough to play the game
-playerAge_int = int(playerAge)
-if (playerAge_int <= 12):
-    print("You are underage to play this game. Ending program!")
-    sys.exit()
+def printMainMenu():
+    print("------------------")
+    print("New game: N")
+    print("Load game: L")
+    print("Quide: Q")
+    print("Quit: E")
 
-# Initializes player, trash and rooms
+def askMenuCommands():
+    command = input("How do you want to proceed: ")
+    startingGame = False
+    while startingGame == False:
+        if command == "N":
+            startingGame == True
+            return True
+        elif command == "L":
+            startingGame == True
+            return False
+        elif command == "Q":
+            with open("quide.txt", "r") as file:
+                print(file.read())
+        elif command == "E":
+            sys.exit()
+        else:
+            print("Unknown command, try again!")
+        printMainMenu()
+        command = input("How do you want to proceed: ")
+
+printMainMenu()
+newPlayer = askMenuCommands()
+
+# Initializes trash and rooms
 trash1 = Trash("tin can")
 trash2 = Trash("cardboard box")
 trash3 = Trash("plastic package")
@@ -53,7 +74,47 @@ area3 = Area("Bridge", trash3)
 
 areas = (area1, area2, area3)
 
-player = Player(playerName, int(playerAge), inventory, cash, area1)
+# Player variables
+playerName = ""
+playerAge = 0
+cash = 250
+inventory = []
+playerLocation = area1
+
+# Starts a new player and goes through any checks before allowing play
+if (newPlayer == True):
+    playerName = input("Please insert your name: ")
+    while True:
+        try:
+            playerAge = int(input("Please insert your age: "))
+            break
+        except ValueError:
+            print("Please input a number value!")
+
+    if (playerAge <= 12):
+        print("You are underage to play this game. Ending program!")
+        sys.exit()
+
+    print("------------------")
+    with open("intro.txt", "r") as file:
+        print(file.read())
+    
+else:
+    data = savesystem.loadPlayer()
+    playerName = data["name"]
+    playerAge = data["age"]
+    cash = data["cash"]
+    inventory = data["inventory"]
+    location = data["location"]
+    area1.trashPickedUp = data["area1trash"]
+    area2.trashPickedUp = data["area2trash"]
+    area3.trashPickedUp = data["area3trash"]
+
+    for area in areas:
+        if area.name == location:
+            playerLocation = area
+
+player = Player(playerName, int(playerAge), inventory, cash, playerLocation)
 
 # Prints player statistics
 def printStatistics():
@@ -70,12 +131,15 @@ def printInventory():
     for item in player.inventory:
         print("- "+item)
 
-# Confirms whether player wants to exit the game or not
+# Confirms whether player wants to save their progress and exits the program
 def exitProgram():
     print("------------------")
-    confirmation = input("Are you sure you want to exit the program? (Yes or No): ")
-    if confirmation == "Yes": sys.exit()
-    else: askCommands()
+    confirmation = input("Do you want to save your progress? This will overwrite any existing save data. (Yes or No): ")
+    if confirmation == "Yes": 
+        savesystem.savePlayer(player.name, player.age, player.cash, player.inventory, player.location.name,
+                              area1.trashPickedUp, area2.trashPickedUp, area3.trashPickedUp)
+    else: pass
+    sys.exit()
 
 # Checks if the current area has an item to pick up, and adds it to the player's inventory
 def checkSurrounding():
@@ -101,8 +165,8 @@ def move():
 # Asks the player for different commands
 def askCommands():
     print("------------------")
-    command = input("What would you like to do? (Inventory, Surrounding, Statistics, Move or Cancel): ")
-    while command != "Cancel":
+    command = input("What would you like to do? (Inventory, Surrounding, Statistics, Move or Exit): ")
+    while command != "Exit":
         if command == "Inventory":
             printInventory()
         elif command == "Surrounding":
@@ -115,7 +179,7 @@ def askCommands():
             print("Unknown command, try again!")
     
         print("------------------")
-        command = input("What would you like to do? (Inventory, Surrounding, Statistics, Move or Cancel): ")
+        command = input("What would you like to do? (Inventory, Surrounding, Statistics, Move or Exit): ")
 
     exitProgram()
 
