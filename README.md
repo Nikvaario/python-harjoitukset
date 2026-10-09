@@ -53,3 +53,5 @@ Tein toisen osan (Moduuli6) projektia 3.9.
 Tein kolmannen osan (Moduuli7) projektia 8.9.
 
 Tein neljännen osan (Moduuli12) projektia 2.10.
+
+Tein viidennen osan (Moduuli13) projektia 6.10.
