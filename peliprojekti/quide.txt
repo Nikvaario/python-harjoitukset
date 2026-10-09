@@ -1,13 +1,14 @@
 Welcome!
 
 In this game, your goal is to collect five pieces of trash from different locations around a city that you travel.
-In the end, you will be graded by how much trash you have collected.
+In the end, you will be graded and given an ending by how much trash you have collected.
+
 You are asked different commmands to play the game:
 
-- Inventory, used to check what you have in your inventory
-- Surrounding, used to check what you can do in the current area
-- Statistics, used to check your own statistics
-- Move, used to move forward to new areas in the game
-- Cancel, used to exit the game ( prompts if you want to save your progress or not )
+- inventory, used to check what you have in your inventory
+- surrounding, used to check what you can do in the current area
+- statistics, used to check your own statistics
+- move, used to move forward to new areas in the game
+- cancel, used to exit the game and to either save or not your current progress
 
-All you need is a working keyboard to play the game. Enjoy!
+All you need is a working keyboard and computer to play the game. Enjoy!

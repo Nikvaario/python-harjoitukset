@@ -1,0 +1,1 @@
+{"name": "Example", "age": 25, "inventory": ["tin can"], "location": "a Shop Entrance", "area1Explore": true, "area2Explore": false, "area3Explore": false, "area5Explore": false, "area2Interact": false, "area3Interact": false, "area4Interact": false, "area5Interact": false}
